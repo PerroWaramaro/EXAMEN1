@@ -1,0 +1,36 @@
+
+#include <iostream>
+
+using namespace std;
+
+
+int main (void)
+{
+    int yir, birdeiyir, day, birdei, edad;
+      int month, birdeimonth;
+    cout << "Digita el año actual: ";
+      cin >> yir;
+    cin.get();
+        cout << "Digita año de nacimiento: ";
+    cin >> birdeiyir;
+    cin.get();
+        cout << "Digita el dia actual: ";
+    cin >> day;
+    cin.get();
+        cout << "Digita el día de nacimiento: ";
+    cin >> birdei;
+    cin.get();
+     cout << "Digita el mes actual: ";
+    cin >> month;
+    cin.get();
+             cout << "Digita el mes de nacimiento: ";
+    cin >> birdeimonth;
+    cin.get();
+    edad=yir-birdeiyir;
+       if(birdeimonth>month||(birdeimonth==month&&birdei>day))
+        edad=edad-1;
+     cout << "Valor de edad: " << edad << endl;
+    cout << endl;
+    return 0;
+}
+    
